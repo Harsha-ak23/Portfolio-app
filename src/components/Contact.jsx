@@ -7,10 +7,7 @@ import {
   FaLinkedin,
   FaMapMarkerAlt,
   FaPhone,
-  FaTwitter,
 } from "react-icons/fa";
-import { LiaLinkedin } from "react-icons/lia";
-import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 const Contact = () => {
   return (
