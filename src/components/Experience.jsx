@@ -5,28 +5,12 @@ import { data } from "react-router-dom";
 const Experience = () => {
   const workData = [
     {
-      role: "Senior Frontend Developer",
-      company: "TechCorp Inc.",
-      duration: "2020 - Present",
+      role: "Frontend Developer Intern",
+      company: "Saumata Technologies PVT LTD",
+      duration: "June-2025 -- September-2025",
       description:
-        "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
+        "Working with React, JavaScript, Tailwind etc and Creating some website like Huzaifa Hajj Umrah Services, Faizan Umrah Service.",
       color: "purple",
-    },
-    {
-      role: "Web Developer",
-      company: "Digital Solutions LLC",
-      duration: "2018 - 2020",
-      description:
-        "Developed and maintained web applications for various clients, focusing on responsive design and performance optimization.",
-      color: "pink",
-    },
-    {
-      role: "Junior Developer",
-      company: "StartUp Ventures",
-      duration: "2016 - 2018",
-      description:
-        "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
-      color: "blue",
     },
   ];
 
@@ -42,7 +26,7 @@ const Experience = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-4">
           Work
-          <span className="text-purple">Experience</span>
+          <span className="text-purple"> Experience</span>
         </h2>
         <p className="text-gray-400 text-center mx-w-2xl mx-auto mb-16">
           My professional journey so far

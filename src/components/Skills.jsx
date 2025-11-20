@@ -16,27 +16,20 @@ const Skills = () => {
       icon: FaReact,
       description:
         "Building responsive and interactive user interfaces with modern frameworks.",
-      tags: ["React", "Vue.js", "Angular", "TypeScript"],
+      tags: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
     },
     {
       title: "Backend Development",
       icon: FaServer,
       description: "Creating robust server-side applications and RESTful APIs.",
-      tags: ["Node.js", "Express", "Django", "Laravel"],
+      tags: ["Node.js", "Express"],
     },
     {
       title: "Database Management",
       icon: FaDatabase,
       description:
         "Designing and optimizing databases for performance and scalability.",
-      tags: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
-    },
-    {
-      title: "Mobile Development",
-      icon: FaMobileAlt,
-      description:
-        "Building cross-platform mobile applications with modern tools.",
-      tags: ["React Native", "Flutter", "Ionic", "Swift"],
+      tags: ["MongoDB", "PostgreSQL", "MySQL"],
     },
     {
       title: "Cloud & DevOps",
@@ -49,7 +42,7 @@ const Skills = () => {
       icon: FaTools,
       description:
         "Essential tools and technologies I use in my development workflow.",
-      tags: ["Git & GitHub", "Webpack", "Figma", "Jest"],
+      tags: ["Git & GitHub", "Webpack", "Figma", "VSCode"],
     },
   ];
   return (
@@ -64,7 +57,7 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-4">
           My
-          <span className="text-purple">Skills</span>
+          <span className="text-purple"> Skills</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
           Techonolgies I work with to bring ideas to life

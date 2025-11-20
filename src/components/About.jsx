@@ -42,7 +42,7 @@ const About = () => {
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center mb-4">
           About
-          <span className="text-purple">Me</span>
+          <span className="text-purple"> Me</span>
         </h2>
         <p className="text-gray-400 text-center mb-16">
           Get to know more about my backgound and passion.

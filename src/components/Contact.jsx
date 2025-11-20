@@ -66,7 +66,7 @@ const Contact = () => {
     >
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-4">
-          Get In <span className="text-purple">Touch</span>
+          Get In <span className="text-purple"> Touch</span>
         </h2>
 
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
@@ -102,7 +102,7 @@ const Contact = () => {
               <div>
                 <label className="block text-gray-300 mb-2">Your Message</label>
                 <textarea
-                  className="w-full h-40 bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
+                  className="w-full h-25 bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
@@ -169,16 +169,28 @@ const Contact = () => {
             <div className="pt-4">
               <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
               <div className="flex space-x-4">
-                <a className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-gray-900 hover:text-white transition">
+                <a
+                  href="https://github.com/Harsha-ak23"
+                  target="_blank"
+                  className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-gray-900 hover:text-white transition"
+                >
                   <FaGithub />
                 </a>
-                <a className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-blue hover:text-white transition">
+                <a
+                  href="https://www.linkedin.com/in/kasaudhanak"
+                  target="_blank"
+                  className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-blue hover:text-white transition"
+                >
                   <FaLinkedin />
                 </a>
                 <a className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-blue hover:text-white transition">
                   <FaXTwitter />
                 </a>
-                <a className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-pink hover:text-white transition">
+                <a
+                  href="https://www.instagram.com/its_harshh10"
+                  target="_blank"
+                  className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-purple hover:bg-pink hover:text-white transition"
+                >
                   <FaInstagram />
                 </a>
               </div>

@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useMemo, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import profile from "../assets/ProfileImage1.jpg";
 const Hero = () => {
+  const roles = useMemo(
+    () => [
+      "Web Developer",
+      "Software Developer",
+      "MERN Stack Developer",
+      "Frontend Developer",
+      "React Developer",
+      "Backend Developer",
+    ],
+    []
+  );
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+  useEffect(() => {
+    const current = roles[index];
+    const timeout = setTimeout(
+      () => {
+        if (!deleting && subIndex < current.length) setSubIndex((v) => v + 1);
+        else if (!deleting && subIndex === current.length)
+          setTimeout(() => setDeleting(true), 1200);
+        else if (deleting && subIndex > 0) setSubIndex((v) => v - 1);
+        else if (deleting && subIndex === 0) {
+          setDeleting(false);
+          setIndex((i) => (i + 1) % roles.length);
+        }
+      },
+      deleting ? 40 : 60
+    );
+    return () => clearTimeout(timeout);
+  }, [index, subIndex, roles, deleting]);
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -17,9 +48,18 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Hi, I'm <span className="text-purple">Ashish Kasaudhan</span>
           </h1>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6">
-            Full Stack Developer
-          </h2>
+          <motion.div
+            className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span>{roles[index].substring(0, subIndex)}</span>
+            <span
+              className="inline-block w-[2px] ml-1 bg-white animate-pulse align-middle"
+              style={{ height: "1em" }}
+            ></span>
+          </motion.div>
           <p className="text-lg text-gray-300 mb-8">
             I create stunning web experience with modern technologies and
             innovative design.

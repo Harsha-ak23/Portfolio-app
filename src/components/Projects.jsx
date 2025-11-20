@@ -5,50 +5,40 @@ import {
   FaReact,
   FaNodeJs,
   FaStripe,
-  FaVuejs,
   FaFire,
   FaDatabase,
   FaCloud,
   FaRobot,
   FaArrowRight,
+  FaJs,
 } from "react-icons/fa";
 
 import projectImg1 from "../assets/project1.avif";
 import projectImg2 from "../assets/project2.avif";
-import projectImg3 from "../assets/project3.avif";
 import projectImg4 from "../assets/project4.avif";
 import projectImg5 from "../assets/project5.avif";
 import projectImg6 from "../assets/project6.avif";
+import projectImg7 from "../assets/currencyImg.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Online Food Restaurant App",
       description:
-        "A full-featured online store with shopping cart, user authentication, and payment processing.",
+        "A full-featured online restaurant app with cart, user, restaurant, order status, authentication and admin pannel.",
       image: projectImg1,
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      icons: [FaReact, FaNodeJs, FaDatabase, FaStripe],
+      tech: ["Node.js", "Express.js", "MongoDB", "JWT"],
+      icons: [FaNodeJs, FaDatabase, FaStripe],
       demo: "#",
       code: "#",
     },
     {
-      title: "Task Management App",
+      title: "Todo Application with Localstorage",
       description:
         "A productivity application with drag-and-drop functionality and real-time updates.",
       image: projectImg2,
-      tech: ["Vue.js", "Firebase", "Tailwind CSS", "WebSockets"],
-      icons: [FaVuejs, FaFire, FaCloud, FaDatabase],
-      demo: "#",
-      code: "#",
-    },
-    {
-      title: "Fitness Tracker",
-      description:
-        "A mobile app for tracking workouts, nutrition, and health metrics.",
-      image: projectImg3,
-      tech: ["React Native", "GraphQL", "MySQL", "Chart.js"],
-      icons: [FaReact, FaDatabase],
+      tech: ["React.js", "JavaScript", "LocalStorage", "Tailwind CSS", "HTML"],
+      icons: [FaReact, FaFire, FaCloud, FaDatabase],
       demo: "#",
       code: "#",
     },
@@ -57,28 +47,37 @@ const Projects = () => {
       description:
         "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
       image: projectImg4,
-      tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Markdown"],
+      tech: ["React.js", "Tailwind CSS", "Framer Motion", "Markdown"],
       icons: [FaReact, FaCloud],
       demo: "#",
       code: "#",
     },
     {
-      title: "Chat App",
-      description:
-        "A real-time chat application with group messaging, emojis, and file sharing.",
+      title: "Weather Applicaton",
+      description: "A Weather application with Real-Time weather report.",
       image: projectImg5,
-      tech: ["Socket.IO", "React", "Node.js", "MongoDB"],
-      icons: [FaReact, FaNodeJs, FaDatabase],
+      tech: ["JavaScript", "Tailwind CSS", "HTML", "Weather API"],
+      icons: [FaJs],
       demo: "#",
       code: "#",
     },
     {
-      title: "AI Image Generator",
+      title: "News AK",
       description:
-        "Generate images using AI prompts powered by OpenAI's DALL·E model and Cloudinary.",
+        "A real-time News application with categories like science, sports etc",
       image: projectImg6,
-      tech: ["React", "OpenAI API", "Cloudinary", "Tailwind CSS"],
+      tech: ["React", "News API", "JavaScript", "Tailwind CSS"],
       icons: [FaRobot, FaReact, FaCloud],
+      demo: "#",
+      code: "#",
+    },
+    {
+      title: "Currency Converter",
+      description:
+        "A Currency Converter application which simulate the currency with real time exchange rate.",
+      image: projectImg7,
+      tech: ["React", "JavaScript", "Tailwind CSS", "Currency API", "HTML"],
+      icons: [FaJs, FaReact],
       demo: "#",
       code: "#",
     },
@@ -96,7 +95,7 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-4">
           My
-          <span className="text-purple">Projects</span>
+          <span className="text-purple"> Projects</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
           A selection of my recent work
